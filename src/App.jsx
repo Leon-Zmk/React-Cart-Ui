@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './components/Nav'
 import Card from './components/Card'
+import Test from './Test'
 
 function App() {
   let products=[
@@ -138,19 +139,22 @@ function App() {
     },
 ]
   return (
-    <div className='container'>
-      <div className="container">
-         <Nav></Nav>
-      </div>
-      <div className="container">
-        <div className=" row justify-content-center flex-wrap  ">
-            {products.map((product)=>(
-                 <Card product={product} key={product.id}></Card>
-            ))}
+    // <div className='container'>
+    //   <div className="container">
+    //      <Nav></Nav>
+    //   </div>
+    //   <div className="container">
+    //     <div className=" row justify-content-center flex-wrap  ">
+    //         {products.map((product)=>(
+    //              <Card product={product} key={product.id}></Card>
+    //         ))}
             
-        </div>
-      </div>
-    </div>  
+    //     </div>
+    //   </div>
+    // </div>  
+    <div>
+      <Test></Test>
+    </div>
   )
 }
 
